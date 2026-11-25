@@ -1,1 +1,154 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07111f"/>
+      <stop offset="50%" stop-color="#0c2038"/>
+      <stop offset="100%" stop-color="#07111f"/>
+    </linearGradient>
 
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#4f8cff"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="500" fill="url(#bg)"/>
+
+  <!-- Network Lines -->
+  <g opacity="0.18" stroke="#00d4ff" stroke-width="2">
+    <line x1="90" y1="90" x2="320" y2="180"/>
+    <line x1="320" y1="180" x2="520" y2="120"/>
+    <line x1="520" y1="120" x2="760" y2="200"/>
+    <line x1="760" y1="200" x2="1040" y2="120"/>
+    <line x1="1040" y1="120" x2="1390" y2="220"/>
+
+    <line x1="230" y1="360" x2="420" y2="280"/>
+    <line x1="420" y1="280" x2="720" y2="360"/>
+    <line x1="720" y1="360" x2="980" y2="260"/>
+    <line x1="980" y1="260" x2="1320" y2="340"/>
+  </g>
+
+  <!-- Nodes -->
+  <g fill="#00d4ff">
+    <circle cx="90" cy="90" r="5"/>
+    <circle cx="320" cy="180" r="5"/>
+    <circle cx="520" cy="120" r="5"/>
+    <circle cx="760" cy="200" r="5"/>
+    <circle cx="1040" cy="120" r="5"/>
+    <circle cx="1390" cy="220" r="5"/>
+
+    <circle cx="230" cy="360" r="5"/>
+    <circle cx="420" cy="280" r="5"/>
+    <circle cx="720" cy="360" r="5"/>
+    <circle cx="980" cy="260" r="5"/>
+    <circle cx="1320" cy="340" r="5"/>
+  </g>
+
+  <!-- Browser Window -->
+  <rect x="90" y="120" width="330" height="210" rx="12"
+        fill="#0f172a" stroke="#334155" stroke-width="2"/>
+
+  <circle cx="120" cy="145" r="6" fill="#ef4444"/>
+  <circle cx="140" cy="145" r="6" fill="#f59e0b"/>
+  <circle cx="160" cy="145" r="6" fill="#22c55e"/>
+
+  <rect x="115" y="180" width="220" height="12" rx="3" fill="#00d4ff"/>
+  <rect x="115" y="210" width="170" height="8" rx="3" fill="#64748b"/>
+  <rect x="115" y="235" width="240" height="8" rx="3" fill="#64748b"/>
+
+  <text x="115" y="285"
+        font-family="Consolas, monospace"
+        font-size="18"
+        fill="#00d4ff">
+        /robots.txt
+  </text>
+
+  <text x="115" y="315"
+        font-family="Consolas, monospace"
+        font-size="18"
+        fill="#00d4ff">
+        /ftp
+  </text>
+
+  <!-- Shield -->
+  <path d="M1360 120
+           L1430 150
+           L1430 230
+           C1430 300 1395 340 1360 360
+           C1325 340 1290 300 1290 230
+           L1290 150 Z"
+        fill="none"
+        stroke="url(#accent)"
+        stroke-width="6"
+        filter="url(#glow)"/>
+
+  <!-- Docker-like Container -->
+  <rect x="1160" y="280" width="90" height="65"
+        rx="10"
+        fill="none"
+        stroke="#00d4ff"
+        stroke-width="4"/>
+
+  <rect x="1265" y="280" width="90" height="65"
+        rx="10"
+        fill="none"
+        stroke="#00d4ff"
+        stroke-width="4"/>
+
+  <!-- Terminal -->
+  <rect x="520" y="250" width="340" height="140"
+        rx="12"
+        fill="#020617"
+        stroke="#00d4ff"
+        stroke-width="2"/>
+
+  <text x="550" y="295"
+        font-family="Consolas, monospace"
+        font-size="16"
+        fill="#22c55e">
+        kali@kali:~$
+  </text>
+
+  <text x="550" y="325"
+        font-family="Consolas, monospace"
+        font-size="16"
+        fill="#22c55e">
+        sudo docker ps
+  </text>
+
+  <text x="550" y="360"
+        font-family="Consolas, monospace"
+        font-size="14"
+        fill="#94a3b8">
+        juice-shop   0.0.0.0:3000
+  </text>
+
+  <!-- Main Title -->
+  <text x="800"
+        y="80"
+        text-anchor="middle"
+        font-family="Segoe UI, Arial, sans-serif"
+        font-size="48"
+        font-weight="700"
+        fill="#ffffff">
+        LOCAL WEB APPLICATION RECONNAISSANCE
+  </text>
+
+  <!-- Subtitle -->
+  <text x="800"
+        y="430"
+        text-anchor="middle"
+        font-family="Segoe UI, Arial, sans-serif"
+        font-size="22"
+        fill="#cbd5e1">
+        OWASP Juice Shop • Docker • Kali Linux • Manual Enumeration
+  </text>
+</svg>
