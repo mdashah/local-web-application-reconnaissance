@@ -35,7 +35,7 @@ For this exercise, I set up a self-hosted OWASP Juice Shop instance using Docker
 
 ### Scope Limitation
 
-This assessment was performed entirely in a self-hosted environment using synthetic data. No public infrastructure, third-party systems, or real-world data were targeted.
+ I performed this assessment entirely in a self-hosted environment using synthetic data. No public infrastructure, third-party systems, or real-world data were targeted.
 
 ---
 
