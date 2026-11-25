@@ -1,20 +1,18 @@
 # Local Web Application Reconnaissance
 
-## 1. Header
-
 **Candidate Name:** Mohammad Shah  
 **Track:** Red Team  
 **Time Spent:** 1.5 Hours
 
 ---
 
-## 2. Objective
+## Objective
 
 The objective of this exercise was to set up a self-hosted vulnerable web application in a local Docker environment and perform manual reconnaissance to identify hidden endpoints and directories without performing any destructive actions.
 
 ---
 
-## 3. Scope & Environment
+## Scope & Environment
 
 ### Target Environment
 - OWASP Juice Shop
@@ -33,7 +31,7 @@ This assessment was performed entirely in a self-hosted environment using synthe
 
 ---
 
-## 4. Methodology
+## Methodology
 
 ### Step 1 – Deploy Application
 
@@ -74,7 +72,7 @@ Opened the Network tab and refreshed the application to observe backend requests
 
 ---
 
-## 5. Findings / Analysis
+## Findings / Analysis
 
 ### Finding 1 – robots.txt Disclosure
 
@@ -178,7 +176,7 @@ These requests provided insight into the application's backend structure and exp
 
 ---
 
-## 6. Recommendation / Remediation
+## Recommendation / Remediation
 
 1. Avoid disclosing sensitive directories through robots.txt.
 2. Restrict public access to internal repositories such as /ftp.
