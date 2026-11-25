@@ -1,5 +1,7 @@
 # Local Web Application Reconnaissance
-  OWASP Juice Shop • Docker • Kali Linux • Manual Enumeration
+### OWASP Juice Shop • Docker • Kali Linux • Manual Enumeration
+
+---
 
 **Candidate Name:** Mohammad Shah  
 **Track:** Red Team  
