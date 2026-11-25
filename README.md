@@ -16,7 +16,7 @@
 
 ## Objective
 
-The objective of this exercise was to set up a self-hosted vulnerable web application in a local Docker environment and perform manual reconnaissance to identify hidden endpoints and directories without performing any destructive actions.
+For this exercise, I set up a self-hosted OWASP Juice Shop instance using Docker and performed hands-on reconnaissance to better understand the application's structure. The focus was on discovering hidden endpoints and directories through manual exploration rather than automated or intrusive techniques.
 
 ---
 
