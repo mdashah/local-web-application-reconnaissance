@@ -1,4 +1,9 @@
+<p align="center">
+  <img src="assets/banner.svg" width="100%" alt="Local Web Application Reconnaissance Banner">
+</p>
+
 # Local Web Application Reconnaissance
+
 ### OWASP Juice Shop • Docker • Kali Linux • Manual Enumeration
 
 ---
